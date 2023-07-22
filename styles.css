@@ -1,0 +1,88 @@
+/* Used for any variables */
+:root {
+
+}
+
+/* Resteting margin and padding for display */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Setting the default to box-sizing for ease of sizing.
+ * Also setting the font size to allow for the use of easy rem calculation.
+ * EX: 1rem = 10px, 1.8rem = 18px.
+ */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Work for the top Nav bar */
+.nav {
+    display: flex;
+}
+
+#nav-list {
+    position: fixed;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    height: 4.rem;
+    background-color: red;
+    list-style: none;
+
+
+}
+
+#nav-list a {
+    font-size: 2rem;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 1rem;
+}
+
+#nav-list a:hover {
+    background-color: purple;
+}
+
+/* Working on the welcome page.
+ * This is everything that is visible when opening the site
+ (Except for the nav bar)
+ */
+
+#welcome-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem;
+    background-color: purple;
+    height: 50rem;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+#welcome-page > p {
+    font-size: 2.5rem;
+
+}
+
+#welcome-page > img {
+    flex-direction: row;
+    justify-content: left;
+    object-fit: cover;
+    height: 30rem;
+    width: 30rem;
+    border-radius: 100%;
+}
+
