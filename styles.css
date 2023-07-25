@@ -63,9 +63,10 @@ html {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 100%;
     padding: 10rem;
     background-color: purple;
-    height: 50%;
+    height: 100vh;
 }
 
 h1 {
@@ -100,6 +101,7 @@ h1 {
 #projects {
     height: 40rem;
     background-color: blue;
+    height: 100rem
 
 }
 
@@ -111,4 +113,50 @@ h1 {
     margin-left: 10rem;
     margin-right: 10rem;
     border-bottom: 0.4rem solid red;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-rows: minmax(200px, auto);
+    gap: 10px;
+    height: auto;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+    margin-left: 2rem;
+    padding: 10rem 2rem;
+}
+
+.project-picture, .project-link {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 32rem;
+    width: 32rem;
+    overflow: hidden;
+    object-fit: cover;
+    background-color: purple;
+}
+
+.project-link {
+    margin-top: 3rem;
+    border-radius: 10%;
+}
+
+
+.project-picture {
+    height: 100%;
+    width: 100%;
+}
+
+.project-title {
+    text-align: center;
+    background-color: purple;
+    font-size: 30px;
+    color: red;
+
 }
