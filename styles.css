@@ -60,6 +60,20 @@ html {
 
 #welcome-page {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem;
+    background-color: purple;
+    height: 50%;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+#name {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -68,21 +82,18 @@ html {
     height: 50rem;
 }
 
-h1 {
-    font-size: 5rem;
+#name > p{
+    font-size: 3rem;
 }
 
-#welcome-page > p {
-    font-size: 2.5rem;
 
-}
 
-#welcome-page > img {
-    flex-direction: row;
-    justify-content: left;
-    object-fit: cover;
+#image > img{
+    display: flex;
     height: 30rem;
     width: 30rem;
-    border-radius: 100%;
+    background-color: red;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
