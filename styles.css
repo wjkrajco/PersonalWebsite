@@ -115,10 +115,11 @@ h1 {
     border-bottom: 0.4rem solid red;
 }
 
-.projects-grid {
+/* .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-template-rows: minmax(200px, auto);
+    justify-content: center;
     gap: 10px;
     height: auto;
     width: 100%;
@@ -127,6 +128,18 @@ h1 {
     margin-bottom: 6rem;
     margin-left: 2rem;
     padding: 10rem 2rem;
+} */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-rows: minmax(200px, auto);
+    gap: 10px;
+    height: auto;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto; /* centers the grid on the page */
+    padding: 2rem;
 }
 
 .project-picture, .project-link {
